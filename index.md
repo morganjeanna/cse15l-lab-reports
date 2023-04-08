@@ -21,7 +21,9 @@ Once VScode has been successfully installed, this is what it should (in general)
 $ ssh cs15lsp23zz@ieng6.ucsd.edu
 ```
 Replace the "zz" with the two letters in your course-specific account. For example, my account is cs15lsp23aw, so I would enter `$ ssh cs15lsp23aw@ieng6.ucsd.edu`  into the terminal. 
-6. Enter your newly-created password when prompted. The terminal should look something like this once finished. ![Image](Screen Shot 2023-04-07 at 6.51.24 PM.png). 
+6. Enter your newly-created password when prompted. The terminal should look something like this once finished. 
+
+![Image](Screen Shot 2023-04-07 at 6.51.24 PM.png). 
 
 
 ## Step 3 - Trying Some Commands
