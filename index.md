@@ -1,7 +1,7 @@
 # Lab Report 1
 ## Step 1 - Installing VScode
 *Because I already had VScode installed from a previous course, I skipped this step. This is what VScode should look like once downloaded.*
-If you do not already have VScode installed, go the following link: [Link](https://code.visualstudio.com/). 
+If you do not already have VScode installed, go the following [link](https://code.visualstudio.com/). 
 This is what the site should look like. Click the download link that corresponds to the operating system that you have. 
 ![Image](Screen Shot 2023-04-07 at 8.59.28 PM.png)
 Once VScode has been successfully installed, this is what it should (in general) look like.
