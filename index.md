@@ -20,6 +20,7 @@ After connecting remotely, the next step is to try some commands. I entered the 
 - `ls -a`
 - `mkdir`
 - `cp`
+
 This is what my terminal looked like after entering each of those commands:
 ![Image](Screen Shot 2023-04-07 at 7.28.47 PM.png)
 
