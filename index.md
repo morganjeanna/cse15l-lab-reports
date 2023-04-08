@@ -17,8 +17,8 @@ Once VScode has been successfully installed, this is what it should (in general)
 3. Once you have found your username, click the link on-screen [Global Password Change Tool](https://sdacs.ucsd.edu/~icc/password.php) to reset your password for this account. Wait a couple minutes after resetting your password before continuing to the next step.
 4. *I skipped this step because I am using a Mac*.                                                                                                        If you are on Windows, install Git for Windows at this [link](https://gitforwindows.org/). Once you have Git installed, follow the instructions at this [link](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) in order to use Bash in VScode. If you are not on Windows, skip this step and continue to the next.
 5. Open up a terminal in VScode. Enter the following command into the terminal:
-`$ ssh cs15lsp23zz@ieng6.ucsd.edu`
-Replace the "zz" with the two letters in your course-specific account. For example, my account is cs15lsp23aw, so I would enter:                           `$ ssh cs15lsp23aw@ieng6.ucsd.edu`                                                                                                                       into the terminal. 
+> `$ ssh cs15lsp23zz@ieng6.ucsd.edu`
+Replace the "zz" with the two letters in your course-specific account. For example, my account is cs15lsp23aw, so I would enter:                           > `$ ssh cs15lsp23aw@ieng6.ucsd.edu`                                                                                                                       into the terminal. 
 6. Enter your newly-created password when prompted. The terminal should look something like this once finished. ![Image](Screen Shot 2023-04-07 at 6.51.24 PM.png). 
 
 
