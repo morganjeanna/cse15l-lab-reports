@@ -14,7 +14,7 @@ Once VScode has been successfully installed, this is what it should (in general)
 ## Step 2 - Remotely Connecting
 1. First, you need to look up your course-specific CSE 15L account. Click this [link](https://sdacs.ucsd.edu/~icc/index.php) and log-in using your username and PID.
 2. Once logged in, find your CSE15L account username. It should start with "cs15lsp23" followed by 2 unique characters. ![Image](Screen Shot 2023-04-07 at 9.19.51 AM.png)
-3. Once you have found your username, click the link on-screen [Global Password Change Tool](https://sdacs.ucsd.edu/~icc/password.php) to reset your password for this account. Wait a couple minutes after resetting your password before continuing to the next step.
+3. Once you have found your username, click the link on-screen [Global Password Change Tool](https://sdacs.ucsd.edu/~icc/password.php) to reset your password for this account. Wait a couple minutes after resetting your password before continuing to the next step. ![Image](Screen Shot 2023-04-08 at 10.13.54 PM.png)
 4. *I skipped this step because I am using a Mac*.                                                                                                        If you are on Windows, install Git for Windows at this [link](https://gitforwindows.org/). Once you have Git installed, follow the instructions at this [link](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994) in order to use Bash in VScode. If you are not on Windows, skip this step and continue to the next.
 5. Open up a terminal in VScode. Enter the following command into the terminal:
 ```
