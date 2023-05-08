@@ -96,15 +96,44 @@ $ find technical/government/Env_Prot_Agen "*.txt" -delete
 The command shown above produces no output, but it deleted all files ending in ".txt" in "technical/government/Env_Prot_Agen". 
 
 ## Find files greater than some size
-The third way to use the `find` command is to use `-size +[number]k`, which will find and list each file in the given directory that is greater than or equal to number given in kilobytes.
-![Image](unnamed.png)
-The command shown above is searching through and listing each file in `technical/biomed` whose size is greater than or equal to 100 kilobytes.
-![Image](Screen Shot 2023-05-06 at 5.46.53 PM.png)
-The command shown above is searching through and listing each file in `technical/911report` whose size is greater than or equal to 1500 bytes.
+`$ find [directory] -size [number][unit]`
+This command will find and list all files within a directory by file size. This is particularly useful because you can specify a size and units (bytes, kilobytes, megabytes, etc) and you can use "+" or "-" to list files greater than or less than a certain specified size. 
+```
+$ find technical/plos -size +29k
+technical/plos/pmed.0020059.txt
+technical/plos/pmed.0020073.txt
+technical/plos/pmed.0020249.txt
+technical/plos/pmed.0020103.txt
+technical/plos/pmed.0010028.txt
+technical/plos/pmed.0010064.txt
+technical/plos/pmed.0020018.txt
+technical/plos/pmed.0020182.txt
+technical/plos/pmed.0020246.txt
+technical/plos/pmed.0020045.txt
+technical/plos/pmed.0010036.txt
+```
+The command shown above is searching through technical/plos and listing all files greater than 29 kilobytes in that directory. The "+" is used in front of 29 to find files greater than the specified size (29), and the "k" is used after 29 to specify the unit of kilobytes. 
+```
+$ find technical/911report -size -10000c
+technical/911report
+technical/911report/preface.txt
+```
+The command shown above is searching through technical/911report and listing all files less than 10000 bytes in that directory. The "-" is used in front of 10000 to find files less than the specified size (10000), and the "c" is used after 10000 to specify the unit of bytes. 
 
-
-The fourth way to use the `find` command is to use `-mtime -[numer]`, which will find and list each file that was modified within the number of days given. 
-![Image](unnamed (1).png)
-The command shown above is searching through and listing each file in `technical` that has been modified within the past 7 days.
-![Image](unnamed (2).png)
-The command shown above is searching through and listing each file in `technical/911report` that has been modified within the past 3 days.
+## Find files based on time last modified
+`$ find technical -mtime [days]`
+This command will search through a given directory and list all files and directories modified within a given time frame. This is useful because you can search for both files and directories that have been modified a specific number of days ago, within a certain number of days, or greater than a certain number of days ago. This can be done by adding "+" or "-".
+```
+$ find technical -mtime -7
+technical
+technical/government
+technical/.DS_Store
+technical/plos/journal.pbio.0020010.txt
+technical/911report
+technical/911report/chapter-11.txt
+```
+The command shown above is searching through technical and listing all files and directories that have been modified within the past 7 days. The "-" in front of 7 is used to find files and directories that have been modified within the past specified number of days.
+```
+$ find technical/plos -mtime +30
+```
+The command shown above is searching through technical/plos to find files and directories that have been modified greater than 30 days ago. The "+" in front of 30 is used to find files and directories that have been modified greater than the specified number of days. No output was produced, meaning that there are no files or directories in technical/plos that have been modified greater than 30 days ago. 
