@@ -48,6 +48,21 @@ This is what my terminal looked like after entering each of those commands:
 ![Image](Screen Shot 2023-05-06 at 4.07.36 PM.png)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Lab Report 3
 
 There are multiple different ways to use the `find` command to search for files or directories based on certain criteria. Below are a few useful ways to use this command. 
