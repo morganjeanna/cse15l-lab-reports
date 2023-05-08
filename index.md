@@ -87,3 +87,6 @@ The command shown above is searching through technical and listing all files and
 $ find technical/plos -mtime +30
 ```
 The command shown above is searching through technical/plos to find files and directories that have been modified greater than 30 days ago. The "+" in front of 30 is used to find files and directories that have been modified greater than the specified number of days. No output was produced, meaning that there are no files or directories in technical/plos that have been modified greater than 30 days ago. 
+
+
+*For each of the command shown above, I used ChatGPT*
