@@ -50,7 +50,7 @@ This is what my terminal looked like after entering each of those commands:
 
 # Lab Report 3
 ## There are multiple different ways to use the `find` command to search for files or directories based on certain criteria. 
-You can use the `find` command to find and list each directory within a given directory. This can be done by entering `find [directory] -type d` into the command line. Below are some examples.
+You can use the `find` command to find and list each directory within a given directory. This can be done by entering `find [directory] -type d` into the command line. This command is useful if you want to search only for directories within a directory hierarchy. Below are some examples. 
 
 ![Image](Screen Shot 2023-05-06 at 5.42.32 PM.png)
 
@@ -84,15 +84,15 @@ technical/911report
 ```
 The command shown above is searching through and listing each directory in `technical`.
 
-You can use the `find` command to delete files within a directory that match a given name. This can be done by entering `find -name [name] -delete` into the command line. Below are some examples.
+You can use the `find` command to delete files within a directory that match a given name. This can be done by entering `find -name [name] -delete` into the command line. This command is useful if you want to delete all files within a directory that match a certain criteria. Below are some examples.
 ```
 $ find technical -name "chapter-1.txt" -delete
 ```
 The command shown above produces no output, but it deleted the file with the name "chapter-1.txt" under "technical". 
 ```
-$ find technical/government -name "bill.txt" -delete
+$ find technical/government/Env_Prot_Agen "*.txt" -delete
 ```
-The command shown above produces no output, but it deleted the file with the name "bill.txt" under "technical/government".
+The command shown above produces no output, but it deleted all files ending in ".txt" in "technical/government/Env_Prot_Agen". 
 
 
 The third way to use the `find` command is to use `-size +[number]k`, which will find and list each file in the given directory that is greater than or equal to number given in kilobytes.
