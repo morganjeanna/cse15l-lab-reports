@@ -49,19 +49,50 @@ This is what my terminal looked like after entering each of those commands:
 
 
 # Lab Report 3
+## There are multiple different ways to use the `find` command to search for files or directories based on certain criteria. 
+You can use the `find` command to find and list each directory within a given directory. This can be done by entering `find [directory] -type d` into the command line. Below are some examples.
 
-One way to use to `find` command is to use `-type d`, which will find and list each directory in the given directory. 
 ![Image](Screen Shot 2023-05-06 at 5.42.32 PM.png)
+
+```
+$ find technical/government -type d
+technical/government
+technical/government/About_LSC
+technical/government/Env_Prot_Agen
+technical/government/Alcohol_Problems
+technical/government/Gen_Account_Office
+technical/government/Post_Rate_Comm
+technical/government/Media
+```
 The command shown above is searching through and listing each directory in `technical/government`. 
+
 ![Image](Screen Shot 2023-05-06 at 5.56.13 PM.png)
+
+```
+$ find technical -type d
+technical
+technical/government
+technical/government/About_LSC
+technical/government/Env_Prot_Agen
+technical/government/Alcohol_Problems
+technical/government/Gen_Account_Office
+technical/government/Post_Rate_Comm
+technical/government/Media
+technical/plos
+technical/biomed
+technical/911report
+```
 The command shown above is searching through and listing each directory in `technical`.
 
-
-The second way to use the `find` command is to use `-type f`, which will find and list each file in the given directory.
-![Image](Screen Shot 2023-05-06 at 5.55.35 PM.png)
-The command shown above is searching through and listing each file in `technical/government/Env_Prot_agen`.
-![Image](Screen Shot 2023-05-06 at 5.42.55 PM (1).png)
-The command shown above is searching through and listing each file in `technical/government`. 
+You can use the `find` command to delete files within a directory that match a given name. This can be done by entering `find -name [name] -delete` into the command line. Below are some examples.
+```
+$ find technical -name "chapter-1.txt" -delete
+```
+The command shown above produces no output, but it deleted the file with the name "chapter-1.txt" under "technical". 
+```
+$ find technical/government -name "bill.txt" -delete
+```
+The command shown above produces no output, but it deleted the file with the name "bill.txt" under "technical/government".
 
 
 The third way to use the `find` command is to use `-size +[number]k`, which will find and list each file in the given directory that is greater than or equal to number given in kilobytes.
