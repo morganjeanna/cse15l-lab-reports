@@ -90,4 +90,4 @@ The command shown above is searching through technical/plos to find files and di
 
 
 *For each of the command shown above, I used ChatGPT. Below is what I entered into ChatGPT, and the output that it produced*
-![Image]Screenshot 2023-05-24 180111.jpg
+![Image](Screenshot 2023-05-24 180111.jpg)
