@@ -13,12 +13,15 @@
 This code used 2 files, one java file for the java program and a bash script. 
 
 *The code before the fix*
+
 ![Image](Screen Shot 2023-06-05 at 1.59.08 PM.png)
 
 *The code after the fix*
+
 ![Image](Screen Shot 2023-06-05 at 1.59.18 PM.png)
 
 *The bash script used to run the file, which triggered the bug*
+
 ![Image](Screen Shot 2023-06-05 at 1.59.26 PM.png)
 
 *What was editted*
