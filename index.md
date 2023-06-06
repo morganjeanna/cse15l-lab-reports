@@ -10,7 +10,7 @@
 *After fix*: Code successfully compiles and runs. The bug was in the header of the forloop. It intially would keep iterating over indices up to and equal the length of some string. This will result in an IndexOutOfBounds error because the index of a string starts at 0, and iterating to an index up to the length of the string will be outside of the bounds of the last index of the string. 
 ![Image](Screen Shot 2023-06-05 at 1.58.02 PM.png)
 
-This code used 2 files, one java file for the java program and a bash script. 
+This code used 2 files, one java file for the java program and a bash script. Both of these files had to be in the same folder.
 
 *The code before the fix*
 
